@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "db/data-source.ts",
+    "db/migrations",
+    "node_modules",
+    "test",
+    "dist",
+    "**/*spec.ts"
+  ]
+}

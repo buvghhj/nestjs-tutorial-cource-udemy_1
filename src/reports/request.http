@@ -1,0 +1,21 @@
+### create report
+POST http://localhost:3000/reports
+Content-Type: application/json
+
+{
+   "make":"bmw",
+   "model":"i8",
+   "year":2014,
+   "mileage":100000,
+   "lng":0,
+   "lat":0,
+   "price":400000
+}
+
+### Approve an existing report
+PATCH http://localhost:3000/reports/1
+content-type: application/json
+
+{
+  "approved": true
+}
